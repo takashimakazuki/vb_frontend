@@ -1,10 +1,7 @@
 <mat-toolbar color="primary">
-  <!-- <button mat-icon-button type="button" aria-label="Toggle sidenav" mat-icon-button>
-    <mat-icon (click)="toggleSideBar()">menu</mat-icon>
-  </button> -->
-  <a mat-icon-button class="mat-button">
+  <a *ngIf="hasHamburger" mat-icon-button class="mat-button">
     <div mat-ripple class="mat-ripple">
-      <mat-icon (click)="toggleSideBar()">三</mat-icon>
+      <mat-icon (click)="toggleSideBar()">A</mat-icon>
     </div>
   </a>
   <a mat-button class="mat-button">
@@ -12,14 +9,19 @@
       VB
     </div>
   </a>
-  <a mat-button class="mat-button">
-    <div mat-ripple class="mat-ripple">
-      test
+  <a mat-button routerLink="/top">
+    <div mat-ripple>
+      Top
     </div>
   </a>
-  <a mat-button>
+  <a mat-button routerLink="/match/list">
     <div mat-ripple>
-      Logout
+      Match
+    </div>
+  </a>
+  <a mat-button routerLink="/">
+    <div mat-ripple>
+      Info
     </div>
   </a>
 </mat-toolbar>
