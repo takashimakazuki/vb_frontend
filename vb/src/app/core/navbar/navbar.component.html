@@ -1,5 +1,5 @@
-<mat-toolbar color="primary">
-  <a *ngIf="hasHamburger" mat-icon-button class="mat-button">
+<mat-toolbar color="primary" class="toolbar">
+  <a @myInsertRemoveTrigger *ngIf="hasHamburger" mat-icon-button class="mat-button">
     <div mat-ripple class="mat-ripple">
       <mat-icon (click)="toggleSideBar()">A</mat-icon>
     </div>

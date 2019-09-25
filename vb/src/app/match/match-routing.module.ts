@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { MatchComponent } from './match.component';
 import { MatchListComponent } from './match-list/match-list.component';
 import { MatchCreateComponent } from './match-create/match-create.component';
+import { MatchDetailComponent } from './match-detail/match-detail.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,7 @@ const routes: Routes = [
     children: [
       { path: 'list', component: MatchListComponent },
       { path: 'create', component: MatchCreateComponent },
+      { path: 'detail/:id', component: MatchDetailComponent },
     ]
   }
 ]
